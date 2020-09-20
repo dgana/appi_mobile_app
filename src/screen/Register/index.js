@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     marginBottom: 24,
     minHeight: 100,
+    textAlignVertical: 'top', // for android only
   },
   button: {
     marginBottom: 100,
