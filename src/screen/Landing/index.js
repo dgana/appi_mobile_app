@@ -1,35 +1,46 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-import {Button} from 'appi_mobile_app/src/component';
+import {StyleSheet, View} from 'react-native';
+import {Container, Heading, Button} from 'appi_mobile_app/src/component';
 
 const Landing = ({navigation}) => {
   return (
-    <View style={styles.container}>
+    <Container>
+      <View style={styles.logoContainer}>
+        <Heading>LOGO</Heading>
+      </View>
       <View style={styles.buttonContainer}>
-        <Button type="primary" onPress={() => navigation.navigate('Login')}>
+        <Button
+          type="secondary"
+          style={styles.button}
+          onPress={() => navigation.navigate('Login')}>
           LOG IN
         </Button>
         <Button
-          type="secondary"
+          type="primary"
+          style={styles.button}
           onPress={() => navigation.navigate('Register')}>
           REGISTER
         </Button>
       </View>
-    </View>
+    </Container>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  logoContainer: {
     flex: 1,
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   buttonContainer: {
-    width: '100%',
+    margin: 12,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingBottom: 24,
+  },
+  button: {
+    flex: 1,
+    margin: 12,
   },
   white: {
     color: 'white',

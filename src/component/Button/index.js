@@ -3,7 +3,7 @@ import {StyleSheet, Pressable, Text} from 'react-native';
 
 const Button = ({onPress, type = 'primary', style, children}) => {
   return (
-    <Pressable onPress={onPress} style={[style, styles.button, styles[type]]}>
+    <Pressable onPress={onPress} style={[styles.button, styles[type], style]}>
       <Text style={[styles.text, styles[`text_${type}`]]}>{children}</Text>
     </Pressable>
   );
@@ -11,11 +11,10 @@ const Button = ({onPress, type = 'primary', style, children}) => {
 
 const styles = StyleSheet.create({
   button: {
-    margin: 12,
     padding: 12,
     borderWidth: 2,
     borderColor: 'black',
-    flex: 1,
+    marginTop: 12,
   },
   primary: {
     backgroundColor: 'black',

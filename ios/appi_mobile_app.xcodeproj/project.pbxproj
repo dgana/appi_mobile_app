@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* appi_mobile_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* appi_mobile_appTests.m */; };
+		45CBDBFD2517BE170011FC85 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45CBDBFC2517BE170011FC85 /* Ionicons.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BCAC7FA0C208140AD9B2A169 /* libPods-appi_mobile_app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D882CAC9929BCC3D702DBCD /* libPods-appi_mobile_app-tvOSTests.a */; };
 		ECE4EFEC4393D3D657C69CDC /* libPods-appi_mobile_app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F343F0897DBB81377E774E /* libPods-appi_mobile_app-tvOS.a */; };
@@ -57,6 +58,7 @@
 		23B1436B7F40E1DFE1DD5769 /* Pods-appi_mobile_app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appi_mobile_app-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-appi_mobile_app-tvOS/Pods-appi_mobile_app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* appi_mobile_app-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "appi_mobile_app-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* appi_mobile_app-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "appi_mobile_app-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CBDBFC2517BE170011FC85 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		4A6CD7197D7D278728596D68 /* libPods-appi_mobile_app-appi_mobile_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appi_mobile_app-appi_mobile_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69568B2A0F61CBEB48483736 /* libPods-appi_mobile_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appi_mobile_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D882CAC9929BCC3D702DBCD /* libPods-appi_mobile_app-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appi_mobile_app-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* appi_mobile_app */ = {
 			isa = PBXGroup;
 			children = (
+				45CBDBFB2517BC730011FC85 /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -148,7 +151,6 @@
 				15E08614C48053DA2629DA14 /* Pods-appi_mobile_app-tvOSTests.debug.xcconfig */,
 				7D6AD05E28E3AA3F27DB1BFB /* Pods-appi_mobile_app-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +165,14 @@
 				6D882CAC9929BCC3D702DBCD /* libPods-appi_mobile_app-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45CBDBFB2517BC730011FC85 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45CBDBFC2517BE170011FC85 /* Ionicons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -342,6 +352,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				45CBDBFD2517BE170011FC85 /* Ionicons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
